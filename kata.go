@@ -28,12 +28,12 @@ func main() {
 	switch {
 	case unicode.IsDigit(z[0]) && unicode.IsDigit(w[0]):
 		a, err := strconv.Atoi(p[0])
-		if err != nil || 0 > a || a > 10 {
+		if err != nil || 1 > a || a > 10 {
 			panic("Неверный ввод!")
 		}
 
 		b, err2 := strconv.Atoi(p[2])
-		if err2 != nil || 0 > b || b > 10 {
+		if err2 != nil || 1 > b || b > 10 {
 			panic("Неверный ввод!")
 		}
 
